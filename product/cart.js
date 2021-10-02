@@ -62,7 +62,10 @@ let parent = document.getElementById("container");
   let code_button = document.createElement("button");
   code_button.innerText = "Submit";
 
-  code_button.onclick= codeSubmit;
+  // code_button.onclick= codeSubmit();
+  code_button.onclick= function (){
+    codeSubmit();
+  };
 
   order_summary.append(order_heading, order_value, shipping, hr1, order_total, cpn_box, code_button );
 
@@ -106,11 +109,11 @@ let parent = document.getElementById("container");
     //   console.log(grand_total);
 
 
-      if (document.getElementById("coupon-code").value == " AEB2G30") {
-        grand_total = (grand_total * 70) / 100;
-      } else {
-        grand_total;
-      }
+      // if (document.getElementById("coupon-code").value == "AEB2G30") {
+      //   grand_total = (grand_total * 70) / 100;
+      // } else {
+      //   grand_total;
+      // }
 
       let div = document.createElement("div");
       div.setAttribute("class", "item-container");
@@ -162,7 +165,7 @@ let parent = document.getElementById("container");
     let code_value = document.getElementById("coupon-code").value;
     // console.log(code_value);
 
-    if(code_value === " AEB2G30"){
+    if(code_value === "AEB2G30"){
 
       grand_total = Math.ceil((grand_total * 70) / 100);
 
