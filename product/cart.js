@@ -171,4 +171,8 @@ let parent = document.getElementById("container");
 
       document.getElementById("total-price").innerText = grand_total;
     }
+
+    else{
+      alert("Coupon Code is wrong")
+    }
   }

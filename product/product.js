@@ -518,4 +518,6 @@ function addtocart(p) {
   products_cart.push(p);
 
   localStorage.setItem("cart", JSON.stringify(products_cart));
+
+  alert("Product successfully added to cart")
 }
