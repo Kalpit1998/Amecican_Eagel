@@ -60,5 +60,12 @@ function signup(e){
     arr.push(user);
 
     localStorage.setItem("users", JSON.stringify(arr));
+    
+    // window.location.href= "https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript";
 
+    // window.setTimeout(function () {
+    //     window.location.href = "https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript"
+    // },1500)
+
+    // alert("success")
 }
